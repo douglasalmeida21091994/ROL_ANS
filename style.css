@@ -50,7 +50,8 @@ h2 {
 .content {
     height: auto;
     max-width: 1200px;
-    margin: 0 20px;    
+    margin: 0 20px; 
+    transition: all 0.3s ease;    
 }
 
 ol {
@@ -114,6 +115,10 @@ footer {
     h2 {
         font-size: 1.1rem;
         color: #fff;
+    }
+
+    .content {              
+        margin: 0 10px;          
     }
 }
 
