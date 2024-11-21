@@ -87,11 +87,30 @@ p {
 footer {
     color: #555;
     margin: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;        
+}
+
+.span-footer {
+    position: absolute;
+    left: 72px;
+    font-size: 10px;
+    background-color: #444;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    opacity: .8;
+    transition: all 0.3s ease;
 }
 
 
 /* Media Query para telas entre 671px e 900px */
-@media (min-width: 671px) and (max-width: 900px) { 
+@media (min-width: 671px) and (max-width: 1000px) { 
 
     .title {
         background-image: linear-gradient(135deg, rgb(75,63,197) 0%,rgb(79,145,214) 100%);
@@ -103,6 +122,21 @@ footer {
         font-size: 1.1rem;
         color: #fff;
     }
+
+    .span-footer {
+        position: absolute;
+        left: 18px;
+        font-size: 10px;
+        background-color: #444;
+        padding: 5px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: #fff;
+        letter-spacing: 1.5px;
+        opacity: .8;
+        transition: all 0.3s ease;
+    }
+
 }
 
 /* Media Query para telas de até 670px */
@@ -120,5 +154,19 @@ footer {
     .content {              
         margin: 0 10px;          
     }
+
+    .span-footer {
+        position: absolute;
+        left: 5px;
+        font-size: 8px;
+        background-color: #eee;
+        padding: 2px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: #222;       
+        opacity: .8;
+        transition: all 0.3s ease;
+    }
+
 }
 
